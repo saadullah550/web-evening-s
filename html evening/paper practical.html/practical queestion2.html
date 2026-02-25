@@ -1,0 +1,65 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <style>
+            .heading{
+                color: black;
+                text-align: center;
+                text-decoration: underline;
+            }
+        </style>
+            
+
+        
+ </head>
+ <body>
+    
+    <h1 class="heading">Student form </h1> 
+    <p style="color: brown;">Student  Form</p>   
+   <form>
+    <div>
+    <label for="Name">Name
+    <input type="Text" id="name" placeholder="Enter your name" minlength="5" required>
+    </label> <br>
+    <label for="Email">Email
+    <input type="email" id="Email" placeholder="Enter your Email" required>
+    </label> <br>
+    <p>gender</p>
+    <label for="gender">
+        Male:
+        <input type="radio" name="gender" value="Male"id="gender"  >
+    </label>
+    <label for="gender">
+        female:
+        <input type="radio" name="gender" value="female"id="gender"  >
+     </label><br>
+    </div>
+    <div>
+    <p>Subjeccts</p>
+    <label for="">
+        Math:
+        <input type="checkbox">
+    </label> 
+    <label for="">
+        Science:
+       <input type="checkbox"> 
+    </label> <br> 
+    </div>
+    <div>
+        <label for="city">city</label>
+        <select id="city" name="city" required >
+        <option value="">select city</option> 
+        <option>Lahore</option>
+        <option>Karachi</option>   
+   </select>
+   <br>
+   <div>
+   <button>Save</button>
+    </div>
+   </form> 
+
+ </body>
+ </html>
