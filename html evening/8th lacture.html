@@ -1,0 +1,55 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div with inliine -block box model</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: blueviolet;
+            border: 2px solid red;
+            margin: 10px;
+            padding: 10px;
+            display: inline-block;
+            
+        }
+        .text-box , .image-box{display: inline-block;}
+        .text-box{
+            background-color: aliceblue;
+            padding: 10px;
+            width: 400px;
+
+        }
+        .text-box h2, .text-box p{
+            margin-bottom: 10px;
+
+        }
+        .image-box image{width: 300px;}
+    </style>
+ </head>
+ <body>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <diV class="box"></diV>
+    <!--img with box-->
+    <section>
+        <div class="text-box">
+            <h2>image with text</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores similique perspiciatis rem, totam maxime, praesentium recusandae sed sit eveniet expedita quos adipisci ab aliquam vitae fugit, magni voluptatem molestias odio.</p>
+            <button type="button">Click here</button>
+         </div>
+         <div class="image-box">
+            <img src="Ex9MlTC-nature-wallpaper-wallpaper.jpg" alt="">
+         </div>
+    </section>
+
+ </body>
+ </html>
