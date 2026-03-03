@@ -1,0 +1,61 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 300px;
+            width: 300px;
+            background-color: rgb(138, 88, 13);
+            margin-left: 30px;
+            /* box-shadow: 0px 0px 10px 10px red; */
+            transition: 2s ease;
+        }
+        .box:hover{
+       
+        box-shadow: 0px 0px 10px 10px red;
+
+        }
+        .input1-field{
+            margin: 10px;
+            padding: 4px;
+            transition: 1s ease;
+        }
+        .input1-field:focus{
+            outline: none;
+            border: 2px rgba(64, 51, 145, 0.945);
+            border-radius: 7px;
+            box-shadow: 0px 0px 5px 7px rgba(64, 51, 145, 0.945)  ;
+        }
+        .input2-field{
+            margin: 5px;
+            padding: 5px;
+            transition: 1s ease;
+        }
+        .input2-field:focus{
+              outline: none;
+            border: 2px rgba(230, 100, 13, 0.945);
+            border-radius: 7px;
+            box-shadow: 0px 0px 5px 7px rgba(221, 123, 10, 0.945)  ;
+        }
+        .input1-field:hover{
+            box-shadow: 0px 0px 5px 7px;
+        }
+        .input1-field{
+            transition: 1s ease;
+        }
+
+    </style>
+    
+ </head>
+ <body>
+    <!-- box-shadow,psoudo classsic -->
+     <div class="box"></div>
+     <!-- input field with foucs -->
+     <input type="text" class="input1-field"  placeholder="Enter a value">
+     <input type="text" class="input2-field"  placeholder="Enter a value">
+
+ </body>
+ </html>

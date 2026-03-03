@@ -1,0 +1,97 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions 11th lacture</title>
+    <style>
+      /* For absolute */
+      .absolute{
+         border: 5px solid blue;
+         position: relative;
+         /* position: relative appy if page move according to its parents;= with out relative positions box move according to web page  */
+      }
+      .absolute div{
+         width: 200px ;
+         height: 200px;
+         background-color: aqua;
+         display: inline-block;
+      }
+      .absolute .box2{
+         background-color: black;
+         position: absolute;
+         right: 0px;
+         bottom:  0px;
+      }
+      /* For relative  */
+      .relative{
+         border: 6px solid red;
+      }
+      .relative div{
+         height: 300px;
+         width: 300px;
+         background-color: chocolate;
+         display: inline-block;
+      }
+      .relative .box1{
+         position: relative;
+         z-index: 3;
+      }
+      .relative .box2 {
+         background-color: black;
+         position: relative;
+         top: 40px;
+         /* left: 30px; */
+         right: 150px;
+         /* z-index: 1; */
+         /* z-index is use to give orders to elnments or boxs in web page  by defult every elnment or box have z index order 1 */
+      }
+      .relative .box3{
+         background-color: blue;
+         position: relative;
+         top: 80px;
+         /* left: 90px; */
+         right: 700px;
+      }
+      /* fixed or fixed div */
+      .fixed{
+         width: 300px;
+         height: 300px;
+         background-color: pink;
+         position: fixed;
+         top: 0px;
+         right: 150px;
+      }
+      .fixed2{
+         width:400px;
+         height: 400px;
+         background-color: black;
+         position: fixed;
+         top: 0px;
+         left: 300px;
+      }
+    </style>
+ </head>
+ <body>
+    <!-- position with absolute -->
+     <!-- absolute relate with web page or with its parents  -->
+   <div class="absolute">
+      <h1>Absolute Position</h1>
+      <diV class="box1"></diV>
+      <diV class="box2"></diV>
+      <diV class="box3"></diV>
+   </div>
+   <br><br>
+   <!-- RElative position -->
+    <!-- relative relate with its normal or orginal  positions  -->
+   <div class="relative">
+      <h1>RElative positions</h1>
+         <diV class="box1"></diV>
+         <diV class="box2"></diV>
+         <diV class="box3"></diV>
+   </div>
+   <div class="fixed"></div>
+   <div class="fixed2"></div>
+   
+ </body>
+ </html>
