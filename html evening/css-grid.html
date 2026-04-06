@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-section {
+            background-color: brown;
+            /* height: 400px; */
+            /* padding: 10px 15px; */
+        }
+
+        .grid-container {
+            display: grid;
+            /* height: 350px; */
+            /* grid-template-columns: auto auto auto; */
+            /* We can create the colums in grid by using the (auto)  or vale (100px ) or with fr propertoie or with repeart*/
+            /* grid-template-columns: 90px 150px 120px ; */
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: 120px 120px 120px 120px 120px 120px 120px 120px 120px 120px 120px 120px 120px 120px 120px  ;
+            gap: 5px 10px;
+            padding: 40px;
+            justify-content: center;
+            /* align the grid horizentaly insise its container */
+            /* justify-items: center; */
+            /* align the items  horizantialy inside the cell */
+            align-content:center ;
+            /*align the grid vertically inside its conatiner  */
+            /* align-items: center; */
+            /* align  the items vertically inside the cell */
+            
+        }
+
+        .grid-container .items {
+            background-color: gray;
+            padding: 10px 5px;
+        }
+        .items1{
+            /* grid-column: 1/4; */
+            /* Grid colum is applied on the line of colums for a specific items  */
+        }
+        .items2{
+            /* grid-row: 1/3; */
+            /* grid row is applied on the line of rows for a specific items */
+
+        }   
+        
+        
+        
+            
+        
+    </style>
+</head>
+
+<body>
+    <section class="grid-section">
+        <h1>CSS Grid</h1>
+        <div class="grid-container">
+            <div class="items items1">items1</div>
+            <div class="items items2">items2</div>
+            <div class="items">items3</div>
+            <div class="items">items4</div>
+            <div class="items">items5</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items">items6</div>
+            <div class="items items15">Lorem ipsum dolor sit amet consectetur adipisicing elit</div>
+            
+            
+            
+        </div>
+        </div>
+    </section>
+</body>
+
+</html>

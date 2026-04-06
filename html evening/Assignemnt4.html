@@ -1,0 +1,81 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox services</title>
+    <style>
+        .navbar{
+            background-color:black;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .nav{
+            
+            gap: 35px;
+            display:flex;
+            /* justify-content: center; */
+            width: 60%;
+            
+            
+        }
+        .navbar h1{
+            padding: 8px 8px;
+            margin: 0px 50px;
+        }
+        .nav a{
+            
+            text-decoration: none;
+            color: white;
+            border: 3px solid brown;
+            padding: 4px ;
+            border-radius: 3px;
+
+        }
+        .navbar .title{
+            color: gray;
+        }
+        .container{
+            /* width: 30%; */
+            background-color: gray;
+            height: 400px;
+            display: flex;
+            padding: 20px 20px;
+            justify-content: space-between;
+        }
+        img{
+            width: 60%;
+        }
+        p{
+            /* width: 40%; */
+        }
+    </style>
+ </head>
+ <body>
+    <section>
+        <div class="navbar">
+            <h1>My<span class="title">website</span></h1>
+            <nav class="nav">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Services</a>
+            </nav>
+
+        </div>
+    </section>
+    <section class="container ">
+        <div>
+        <h1>our services</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo rem quasi consequatur. Ducimus commodi sit fugit delectus quia reprehenderit voluptatum harum cupiditate ex. Asperiores, temporibus hic. Accusantium voluptate atque perferendis.</p>
+        <button>Mor info</button>
+        </div>
+
+        <div>
+            <img src="assest/img/nature.jpg" alt="">
+        </div>
+    </section>
+ </body>
+ </html>

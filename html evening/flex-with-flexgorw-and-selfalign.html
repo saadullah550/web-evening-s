@@ -1,0 +1,54 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container div{
+            background-color: rgb(143, 75, 75);
+            padding: 6px;
+            margin: 5px;color: aliceblue;
+            /* width: 30%; */
+            /* flex-grow: 1px; */
+            /* flex-shrink:0; */
+            /* Flex shrink is used to shrink the items or stop the items to stop the shrink the value of shrink by defaut is 1 if we give the vale of flex-shrink is 0 then the items cannot be shrink */
+            /* The vale of flex grow by deflt zero */
+            /* Flex-basis:150px; */
+            flex: 1 0 150px;
+            /* Flex it self is a propertie it is used to give the properties of items flex-grow flex-shrink and flex-basis respectively */
+            /* Flex basis is used to set a size of items on main axis */
+        }
+        .container{
+            border: 2px solid black;
+            display: flex;
+            /* flex-direction: column; */
+            flex-direction: row;
+            align-items: center;
+            height: 300px;
+        }
+        .item1{
+            flex-grow: 2;
+            /* align-self:end; */
+            /* Align self work on cross axis */
+        }
+        .item2{
+            flex-grow: 3;
+            /* Flex grow work on main exis */
+            /* align-self: start; */
+        }
+    </style>
+ </head>
+ <body>
+    <div class="container">
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="item1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="item2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <!-- <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div> -->
+        <!-- <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div> -->
+        <!-- <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div> -->
+        <!-- <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div> -->
+        
+    </div>
+ </body>
+ </html>
