@@ -25,4 +25,42 @@
     console.log('Hello,' +name)
   }
   //function calling
-  greet(Abdullah)
+  greet('saad')
+
+  //HTML DOM( document object model)
+
+  //writing text using js
+  // document.getElementById('text').innerText='Hello js';
+  // document.querySelector('h1').innerText='Hello js';
+
+
+  //stlying with js
+  // function changecolor(){
+            // document.querySelector('h1').style.color ='red';
+            // document.querySelector('h1').style.backgrouncolor'='black;
+  // }
+  
+  
+
+  //using event listners with a named function 
+
+  // document.getElementById('btn').addEventListener('click',changecolor)
+  // Eventlinstner with anonymous function
+  // document.getElementById('btn').addEventListener(
+    // 'click ', function(){
+      // document.querySelector('h1').style.color='red'
+    // }
+  // )
+  let box=document.getElementById('box')
+  document.getElementById('btn').addEventListener('click',function()
+
+{
+  box.style.backgroundColor='blue';
+  box.style.color='white';
+  box.style.border='2px solid gray';
+  box.style.padding='10px';
+})
+
+
+
+

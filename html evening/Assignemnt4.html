@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexbox services</title>
     <style>
+        .{
+            padding: 0px;
+            margin: 0px;
+        }
+            
+        
+        
         .navbar{
             background-color:black;
             color: white;
@@ -46,11 +53,98 @@
             justify-content: space-between;
         }
         img{
-            width: 60%;
+            width: 100%;
         }
         p{
             /* width: 40%; */
         }
+        .img-box{
+            width: 50%;
+            padding: 10px 30px;
+        }
+        .text-box{
+            width: 30%;
+            padding: 30px 20px;
+            
+        }
+        .container button{
+            padding: 6px;
+            border-radius: 4px;
+            background-color:yellow ;
+            color: black;
+        }
+        .container h1{
+            color: aliceblue;
+        }
+        .hero{
+            display: flex;
+            justify-content: center;
+        }
+        .card-container{
+            
+            display: flex;
+            height: 350px;
+            flex-direction: row;
+            /* justify-content: center; */
+
+        }
+        .Hero{
+
+            background-color: cornflowerblue;
+        }
+        .card{
+            
+                background-color:gray;
+                height: 220px;
+                margin: 8px 6px;
+                width: 320px;
+                padding: 10px;
+                border-top: 2px solid yellowgreen;
+                border-radius: 5px;
+        }
+        .card-container .card .button{
+            padding: 6px 6px;
+            border-radius: 5px;
+            background-color: black;
+            color: aliceblue;
+        }
+        .Hero .title1{
+            background-color: rgb(109, 131, 131);
+            padding: 9px 9px;
+            color: floralwhite;
+        }
+        .team-section{
+            background-color: darkcyan; 
+            height: 500px;
+        }
+        .card1{
+            background-color: rgb(6, 49, 47);
+            padding: 10px 10px;
+            height: 600x;
+            width: 200px;
+            margin: 10px;
+            border-radius: 4px;
+            border-top: 2px solid pink;
+            color: whitesmoke;
+        }
+        .card1 img{
+            width: 50%;
+        }
+        .card-container1{
+             
+            display: flex;
+            justify-content:space-around;
+
+        }
+        .footer{
+            background-color: rgb(98, 151, 138);
+            display: flex;
+            justify-content: space-between;
+            height: 150px;
+            align-items: center;
+        }
+        
+        
     </style>
  </head>
  <body>
@@ -67,15 +161,79 @@
         </div>
     </section>
     <section class="container ">
-        <div>
-        <h1>our services</h1>
+        <div class="text-box">
+        <h1>New Contant</h1>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo rem quasi consequatur. Ducimus commodi sit fugit delectus quia reprehenderit voluptatum harum cupiditate ex. Asperiores, temporibus hic. Accusantium voluptate atque perferendis.</p>
         <button>Mor info</button>
         </div>
 
-        <div>
+        <div class="img-box">
             <img src="assest/img/nature.jpg" alt="">
         </div>
+    </section>
+    <section class="Hero">
+        <h1 class="title1">Our Services</h1>
+        <div class="card-container">
+            <div class="card">
+                <div> 💸 </div>
+                <h1>Affordable Price</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem tenetur consectetur ipsa aliquid, architecto enim odio nam atque! </p>
+                <button class="button">Learn More</button>
+            </div>
+            <div class="card">
+                <div>🔁</div>
+                <h1>Return Policy</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam ea, consectetur quidem voluptas cum sunt voluptatem, iure new at so</p>
+                <button class="button">Learn More</button>
+            </div>
+            <div class="card">
+                <div>🤝🏻</div>
+                <h1>Trustable</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum obcaecati a molestias aspernatur, quidem optio atque ipsum, quos and this  </p>
+                <button class="button">Learn More</button>
+            </div>
+            <div class="card">
+                <div>⚡</div>
+                <h1>Fast Speed</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem officiis sunt numquam eos odit nisi explicabo tempora cupiditate </p>
+                <button class="button">Learn More</button>
+                
+            </div>
+
+        </div>
+    </section>
+    <section class="team-section">
+        <h1>Team Members</h1>
+        <div class="card-container1">
+            <div class="card1">
+                <h1>Web Develpnment</h1>
+                <h3>Saadullah</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <img src="assest/img/boy1.jpg" alt="">
+
+            </div>
+            <div class="card1">
+                <h1>SEO</h1>
+                <h3>Matteen</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.  it is the thst is way this my idel pic</p>
+                <img src="assest/img/boy2.jpg" alt="">
+             </div>
+             <div class="card1">
+                <h1>Cyber scurity</h1>
+                <h3>Haider</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.is the it that is way this is my idel pic </p>
+                <img src="assest/img/boy3.jpg" alt="">
+             </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div>
+            <h1>Mywebsite</h1>
+        </div>
+        <div>
+            <h1>Provicy Policy</h1>
+        </div>
+
     </section>
  </body>
  </html>
