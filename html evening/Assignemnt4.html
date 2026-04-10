@@ -49,7 +49,7 @@
             background-color: gray;
             height: 400px;
             display: flex;
-            padding: 20px 20px;
+            /* padding: 20px 20px; */
             justify-content: space-between;
         }
         img{
@@ -79,6 +79,7 @@
         .hero{
             display: flex;
             justify-content: center;
+            /* padding: 8px; */
         }
         .card-container{
             
@@ -115,8 +116,16 @@
         }
         .team-section{
             background-color: darkcyan; 
-            height: 500px;
-        }
+            height: 500px;}
+            .team-section h1{
+                background-color: gray;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+        
         .card1{
             background-color: rgb(6, 49, 47);
             padding: 10px 10px;
@@ -137,11 +146,31 @@
 
         }
         .footer{
-            background-color: rgb(98, 151, 138);
+            background-color: black;
             display: flex;
-            justify-content: space-between;
-            height: 150px;
+            justify-content: space-around;
+            height: 60px;
             align-items: center;
+            
+        }
+        .title3 a{
+            padding: 5px;
+            margin: 5px;
+            text-decoration: none;
+            color: aliceblue;
+        }
+        .footer span{
+            color: gray;
+            
+        }
+        .footer h1{
+            color: aliceblue;
+        }
+        .div1{
+            padding: 4px;
+        }
+        .div2{
+            padding: 4px;
         }
         
         
@@ -172,7 +201,7 @@
         </div>
     </section>
     <section class="Hero">
-        <h1 class="title1">Our Services</h1>
+       <div class="div1"> <h1 class="title1">Our Services</h1> </div>
         <div class="card-container">
             <div class="card">
                 <div> 💸 </div>
@@ -203,7 +232,7 @@
         </div>
     </section>
     <section class="team-section">
-        <h1>Team Members</h1>
+       <div class="div2">  <h1>Team Members</h1> </div>
         <div class="card-container1">
             <div class="card1">
                 <h1>Web Develpnment</h1>
@@ -227,11 +256,13 @@
         </div>
     </section>
     <section class="footer">
-        <div>
-            <h1>Mywebsite</h1>
+        <div >
+            <h1>My<span>website</span></h1> 
         </div>
-        <div>
-            <h1>Provicy Policy</h1>
+        <div class="title3">
+            <a href="#">Provicy Policy </a>
+            <a href="#">Terms </a>
+            <a href="#">Contact </a>
         </div>
 
     </section>
