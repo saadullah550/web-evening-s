@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     
  </head>
  <body>
@@ -20,9 +21,56 @@
    <!-- <button type="button" id="btn"> Fetch value</button> -->
    
 
-    <p id="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, sed maxime eum non iusto repellat accusamus </p>
-    <input type="text" id="color" placeholder="Enter a color">
-    <button id="btn">Change color</button>
+    <!-- <p id="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In, sed maxime eum non iusto repellat accusamus </p> -->
+    <!-- <input type="text" id="color" placeholder="Enter a color"> -->
+    <!-- <button id="btn">Change color</button> -->
+
+   <!-- <h1 id="table ">Table </h1> -->
+   <!-- <input type="number" id="num" placeholder="Enter a number"> -->
+   <!-- <button id="btn2" type="button">Click here</button> -->
+
+<!-- callculator with js and tailwind -->
+
+<!-- Container -->
+ <!-- <div class="flex justify-center items-center  h-screen"> -->
+   <!-- Card -->
+    <!-- <div class="bg-gray-400 w-[450px] p-4 rounded-md"> -->
+      <!-- <h1 class="text-3xl font-bold my-2">callculator</h1> -->
+      <!-- <input type="number" id="num1" placeholder="Enter a number" class="border-2 border-amber-900 rounded-md p-1 hover:font-bold"> -->
+      <!-- <input type="number" id="num2" placeholder="Enter a number" class="border-2 border-amber-900 rounded-md p-1 hover:font-bold"> -->
+      <!-- A div for the button -->
+       <!-- <div class="grid grid-cols-4 py-2"> -->
+         <!-- <button   onclick="calculator('+')" class="bg-blue-400 rounded-md p-1 mx-0.5 hover:font-bold">+</button> -->
+         <!-- <button  onclick="calculator('-')"  class="bg-blue-400 p-1 mx-0.5 rounded-md hover:font-bold">-</button> -->
+         <!-- <button   onclick="calculator('*')" class="bg-blue-400 p-1 mx-0.5 rounded-md hover:font-bold">*</button> -->
+         <!-- <button   onclick="calculator('/')"  class="bg-blue-400 p-1 mx-0.5 rounded-md hover:font-bold">/</button> -->
+         <!-- <button onclick="clearValue()" class="bg-red-600 p-2 mx-0.5 rounded-md col-span-4 hover:font-bold">Clear Values </button> -->
+         <!-- <p class="bg-yellow-200 rounded-md py-1 m-1 px-1"> Result:<span id="result"></span> </p> -->
+
+       <!-- </div> -->
+
+
+
+    <!-- </div> -->
+ <!-- </div> -->
+
+
+
+ <!-- Container -->
+  <div class="bg-sky_200 min-h-screen flex justify-center items-center">
+   <div class="bg-amber-200 w-lg p-3 rounded-lg ">
+   <h1 class="text-2xl font-bold"> To dO List</h1>
+   <div class="py-2">
+      <input type="text" id="text-input" placeholder="Enter a New Task" class="w-[80%] border-2 border-pink-500 p-2 rounded-md" >
+      <button class="bg-pink-300 font-semibold border-2 border-black  py-1 px-2 rounded-md" id="Add-task">Add Task</button>
+   </div>
+   <!-- task list -->
+    <ul id="task-list"></ul>
+   </div>
+  </div>
+  
+
+
      <script src="../script/index.js"></script>
  </body>
  </html>

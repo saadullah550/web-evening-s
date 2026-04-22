@@ -95,7 +95,7 @@ function addvalues(a,b){
   console.log(a+b)
 }
 addvalues(5,7)
-// Arrow function
+    // Arrow  function
 let sum =(a,b) =>{
   console.log(a+b)
 }
@@ -127,3 +127,101 @@ btn.addEventListener('click' , ()=>{
  let val = cities.pop() //removes and return the value 
  console.log(cities)  
  console.log(val) //returned value
+
+
+
+ //loops 
+ //For loop 
+//  for ( let=i=0; i<10; i++){
+//   console.log(i)
+//  }
+ // multipication table
+ let result 
+ for(let i=1; i<=10; i++){
+  result= 2* i 
+console.log(2 + 'x' + i + '=' + result)
+
+ }
+// btn2.addEventListener('click', () =>{
+
+
+//   let num =document.getElementById('num').value 
+//   let result 
+//   for( let i=1; i <= 10; i++ ){
+//     result=num*i ;
+//   console.log(`  ${num} x ${i} = ${result} `)
+//   }
+// })
+
+
+
+// // CALCULATOR
+// function calculator(operator){
+//   let n1 =parseFloat(document.getElementById('num1').value)
+//   let n2 =parseFloat(document.getElementById('num2').value)
+//   let result =0
+
+//   if(n1==="" || n2=== ""){
+//     alert('Inputs sould not be empty')
+//   }
+//   if(isNaN(n1)||isNaN(n2)){
+//     alert('Only Numbers Are allowed')
+//   }
+//   //Operations 
+//   if(operator=== '+')result =n1+n2 
+//   else if(operator==='-') result =n1-n2 
+//   else if(operator==='*') result =n1*n2
+//   else if(operator==='/') result =n1/n2
+//   else "operator Not valid" 
+//   document.getElementById('result').innerText = result
+
+// function clearValues(){
+// document.getElementById('num1').value= ""
+// document.getElementById('num2').value= ""
+// document.getElementById('result').innerText= ""
+
+
+
+// }
+
+
+
+
+
+// }
+
+
+
+
+
+
+function todoList(){
+  let input =document.getElementById('task-input').value
+  let taskText=input.trim()
+  if(taskText===''){
+    alert('Place Enter Something!!')
+  }
+  let il=document.createElement('li')
+  li.className='bg-gray-200 p-2 flex justify-between items-center my-1'
+  let span =document.createElement('span')
+  span.innerText =taskText
+  span.className='cursor-pointer'
+  let dlt = document.createElement('button')  
+    dlt.innerText='Delete Task'
+
+    del.onclick =() => {
+      li.remove()
+    
+
+    
+    li.appendchild(span)
+    li.appendchild(del)
+    document.getElementById('task-list')
+    }
+  
+   
+}
+document.getElementById('add-task').addEventListener('click',todoList)
+document.getElementById('task-input').addEventListener('keypress', (e) =>{
+  if(e.key==='Enter') todoList()
+})

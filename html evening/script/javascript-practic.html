@@ -4,11 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
  </head>
  <body>
-    <h1 id="text"> JAVASCRIPT</h1>
-    <input type="text" id="color" placeholder="Enter a Color">
-    <button id="btn"> Change color</button>
+    <!-- <h1 id="text"> JAVASCRIPT</h1> -->
+    <!-- <input type="text" id="color" placeholder="Enter a Color"> -->
+    <!-- <button id="btn"> Change color</button> -->
+
+   <div class="flex justify-center items-center h-screen">
+      <div class="bg-gray-400 rounded-md w-[550px] p-4">
+         <h1 class="text-3xl font-bold my-2">CALCULATOR</h1>
+         <input type="number" id="num1" placeholder="Enter a Number" class="border-2 border-black-400 p-1 rounded-md text-black text-1xl bg-blue-400 hover:font-bold ">
+         <input type="number" id="num2" placeholder="Enter a Number" class="border-2 border-black-400 p-1 bg-blue-400 rounded-md hover:font-bold">
+         <input type="text" id="myinput" placeholder="The something">
+         <div class="grid grid-cols-4 p-2">
+            <button  onclick="calculator('+')" class="bg-amber-400 p-1 rounded-md p-1 mx-0.5 hover:font-bold">+</button>
+            <button  onclick="calculator('-')" class="bg-amber-400 p-1 wx-0.5 rounded-md hover:font-bold">-</button>
+            <button  onclick="calculator('*')" class="bg-amber-400 p-1 mx-0.5 rounded-md hover:font-bold">*</button>
+            <button  onclick="calculator('/')" class="bg-amber-400 p-1 mx-0.5 rounded-md hover:font-bold">/</button>
+         </div>
+         <p class="bg-yellow-200 py-1 px-1 m-1 rounded-md hover:font-bold">Result:  <span id="result"></span> </p>
+
+      </div>
+   </div>
+
+
+
+
+
+
 
     <script src="../script/index-practic.js"></script>
  </body>

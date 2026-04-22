@@ -1,0 +1,50 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+ </head>
+ <body>
+    <h1 class="m-4  text-4xl" id="text">JAVASCRIPT</h1>
+    <input type="text" id="color" placeholder="Enter any Color" class="border-2 white py-2 px-1 rounded-md hover:font-bold text-2xl  bg-gray-400">
+    <button id="btn" class="border-2 solid black p-2 rounded-md hover:font-bold my-2 bg-gray-400 text-2xl">Change Color</button>
+
+
+       <div  class="flex justify-center items-center h-screen">
+      
+      <div class="bg-gray-400 w-[530px] p-5 rounded-lg">
+         <h1 class="text-4xl font-bold m-8">CALCULATOR</h1>
+         <input type="number" id="num1" placeholder="Enter a number" class=" border-2 black p-2  rounded-md font-bold">
+         <input type="number" id="num2" placeholder="Enter a number" class="border-2 black p-2 rounded-md font-bold">
+         <div class="grid grid-cols-4 py-2">
+            <button onclick="calculator('+')" class="bg-amber-200 p-1 m-[2px] rounded-md" > + </button>
+            <button onclick="calculator('-')" class="bg-amber-200 p-1 m-[2px] rounded-md"> - </button>
+            <button onclick="calculator('*')" class="bg-amber-200 p-1 m-[2px] rounded-md"  > * </button>
+            <button onclick="calculator('/')" class="bg-amber-200 p-1 m-[2px] rounded-md" >/</button>
+            <p class="bg-blue-200 m-1 py-2 p-1 rounded-md">Result: <span id="result"></span></p>
+         </div>
+
+      </div>
+      </div>
+
+      <div class="bg-sky-200 flex justify-center items-center min-h-screen">
+         <div class="bg-blue-400 w-lg p-4 rounded-lg">
+            <h1 class="font-bold text-4xl ">To-do List </h1>
+            <div class="py-3">
+            <input type="text" id="task-input" placeholder="Enter any task" class="w-[80%] border-2 border-black-300 p-2 rounded-lg">
+            <button id="add-task" class="bg-gray-300 font-semibold border-2 border-black py-1 px-2 rounded-md
+               ">Add Task</button>
+               <ul id="task-list"></ul>
+            </div>
+         </div>
+
+
+
+
+
+      </div>
+    <script src="../script/index-7f1.js"></script>
+ </body>
+ </html>

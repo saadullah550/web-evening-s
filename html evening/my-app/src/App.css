@@ -1,0 +1,74 @@
+ .navbar{
+    background-color: rgb(103, 186, 189);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid black;
+    border-radius: 15px;
+ }
+ .nav{
+    display: flex;
+    text-decoration: none;
+    gap: 50px;
+    
+    
+ }
+ .nav a{
+    text-decoration: none;
+    border: 2px solid rgb(216, 198, 205);
+    padding: 8px;
+    margin: 3px 3px;
+    border-radius: 4px;
+    background-color: black;
+    /* color: white; */
+    hover:font-size bold;
+    
+ }
+ .card-container{
+   display: flex;
+   justify-content: space-around;
+   /* margin-top: 10px; */
+   background-color: aquamarine;
+   height: 600px;
+   align-items: center;
+ }
+.card{
+   border-radius: 4px;
+   width: 250px;
+   height: 480px;
+   background-color: gray;
+   margin: 4px; 
+   border-top: 2px solid red;
+   padding: 6px;
+   
+   
+}
+.card h2{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+   
+}
+.btn{
+   padding: 5px;
+   border: 2px solid black;
+   border-radius: 8px;
+   box-shadow: 2px 2px 2px 2px pink;
+   
+   
+}
+img{
+   width: 120px;
+   margin-left: 16px;
+   
+}
+.para{
+   font-size: medium;
+   padding: 9px;
+}
+
+
+
+
+
+ 
+ 

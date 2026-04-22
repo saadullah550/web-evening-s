@@ -39,24 +39,47 @@ console.log(status)
 
 
 
-function addvalues(a,b){
-    console.log(a+b)
+// function addvalues(a,b){
+    // console.log(a+b)
+// }
+// addvalues(10 ,15)
+
+
+// let  sum = (a,b) =>{
+    // console.log(a+b)
+// }
+// sum(20,15)
+
+
+// let cities=[ 'Lahore', 'Multan', 'Karachi']
+// console.log(cities)
+
+// console.log[0]
+
+
+//Calculator
+
+function calculator(operator){
+    let n1=parseFloat(document.getElementById('num1').value)
+    let n2=parseFloat(document.getElementById('num2').value)
+    let result=0
+
+if( n1 ===""||n2 ===""){
+    alert('Input Should Not Be Empty')
 }
-addvalues(10 ,15)
+ if(isNaN (n1)|| isNaN(n2)){
+    alert=('Only Numbers Are Allowed')
 
-
-let  sum = (a,b) =>{
-    console.log(a+b)
 }
-sum(20,15)
 
+if(operator==='+') result=n1+n2
+ else if(operator==='-') result=n1-n2
+ else  if(operator==='*') result=n1*n2
+ else if(operator==='/') result=n1/n2
+ else "Operator not Valid"
+document.getElementById('result').innerText= result
+ 
 
-let cities=[ 'Lahore', 'Multan', 'Karachi']
-console.log(cities)
-
-console.log[0]
-
-
-
+}
 
  
