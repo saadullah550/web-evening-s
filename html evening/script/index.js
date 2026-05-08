@@ -102,12 +102,12 @@ let sum =(a,b) =>{
 sum(2,5)
 
 
-let btn =document.getElementById('btn')
-  let txt =document.getElementById('text')
-btn.addEventListener('click' , ()=>{
-    let color =document.getElementById('color').value 
-    txt.style.color =color
-  } )
+// let btn =document.getElementById('btn')
+//   let txt =document.getElementById('text')
+// btn.addEventListener('click' , ()=>{
+//     let color =document.getElementById('color').value 
+//     txt.style.color =color
+//   } )
   //Arrays : is a collection of values stored in a single variable
   // let city='lahore'
   let cities =[ 'Lahore', 'Karachi', 'Qutta']
@@ -199,29 +199,33 @@ function todoList(){
   let input =document.getElementById('task-input').value
   let taskText=input.trim()
   if(taskText===''){
-    alert('Place Enter Something!!')
+    alert('Please Enter Something!!')
   }
-  let il=document.createElement('li')
-  li.className='bg-gray-200 p-2 flex justify-between items-center my-1'
+  let li=document.createElement('li')
+  li.className='bg-gray-200 p-2 flex justify-between items-center my-1 rounded-md'
   let span =document.createElement('span')
   span.innerText =taskText
   span.className='cursor-pointer'
+  span.onclick= function(){
+    span.className='line-through decoration-red-600'
+  }
   let dlt = document.createElement('button')  
     dlt.innerText='Delete Task'
+    dlt.className='border-2 border-black p-1 rounded-md bg-gray-400'
 
-    del.onclick =() => {
+    dlt.onclick =() => {
       li.remove()
-    
-
-    
-    li.appendchild(span)
-    li.appendchild(del)
-    document.getElementById('task-list')
     }
+    
+    li.appendChild(span)
+    li.appendChild(dlt)
+    
+    document.getElementById('task-list').appendChild(li)
+    
   
    
 }
-document.getElementById('add-task').addEventListener('click',todoList)
-document.getElementById('task-input').addEventListener('keypress', (e) =>{
+document.getElementById('Add-task').addEventListener('click',todoList)
+document.getElementById('task-input').addEventListener('keypress', (e) => {
   if(e.key==='Enter') todoList()
 })
